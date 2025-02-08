@@ -73,3 +73,4 @@ if st.session_state.selected_method:
 st.markdown("---")  # 区切り線   
 st.markdown("関連Webアプリに移動する")
 st.markdown("[自立活動指導支援内容](https://aspecialeducationapp-6iuvpdfjbflp4wyvykmzey.streamlit.app/)")
+st.markdown("[発達段階能力チャート作成](https://specialexcel2apppy-bo6jrng9gyqw5dmfcgwbl5.streamlit.app//)")
