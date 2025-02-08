@@ -68,3 +68,7 @@ if st.session_state.selected_method:
             st.markdown(file.read(), unsafe_allow_html=True)
     else:
         st.error(f"{st.session_state.selected_method} の説明ページが見つかりません")
+
+        # **別のWebアプリへのリンク**
+    st.markdown("関連Webアプリに移動する")
+    st.markdown("[自立活動指導支援内容](https://aspecialeducationapp-6iuvpdfjbflp4wyvykmzey.streamlit.app/)")
