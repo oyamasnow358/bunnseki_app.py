@@ -59,19 +59,24 @@ for method in student_conditions[condition]:
     else:
         st.error(f"{method} のページが見つかりません")
 
-# 選択された療法の説明を表示（サイドバーorボタンで選択時のみ）
+# 説明ページの表示
 if st.session_state.selected_method:
     st.markdown(f"### {st.session_state.selected_method}")
     file_path = methods.get(st.session_state.selected_method)
+
     if file_path:
-        with open(file_path, "r", encoding="utf-8") as file:
-            st.markdown(file.read(), unsafe_allow_html=True)
+        try:
+            with open(file_path, "r", encoding="utf-8") as file:
+                st.markdown(file.read(), unsafe_allow_html=True)
+        except FileNotFoundError:
+            st.error(f"{st.session_state.selected_method} の説明ページが見つかりません（ファイルが存在しません）")
     else:
-        st.error(f"{st.session_state.selected_method} の説明ページが見つかりません")
-        
-# 認知行動療法（CBT）の場合は画像を表示
+        st.error(f"{st.session_state.selected_method} の説明ページが見つかりません（辞書に登録されていません）")
+
+    # **CBT（認知行動療法）なら画像を表示**
     if st.session_state.selected_method == "CBT（認知行動療法）":
-            st.image("images/cbt_diagram.png", caption="認知行動療法",  use_container_width=True)
+        st.image("images/cbt_diagram.png", caption="認知行動療法", use_container_width=True)
+
 
     else:
         st.error(f"{st.session_state.selected_method} の説明ページが見つかりません")
