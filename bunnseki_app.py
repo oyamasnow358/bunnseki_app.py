@@ -171,6 +171,13 @@ if st.session_state.selected_method:
         - **参考文献:** Durand, V. M. (1990). Severe behavior problems: A functional communication training approach. Guilford Press..
         - **Webサイト:** [機能的アセスメント](http://www.kei-ogasawara.com/support/assessment/)
         """)
+
+        st.markdown("---")  # 区切り線
+        st.subheader("📂 機能的行動評価分析ツール")
+        st.markdown("""
+        [機能的行動評価分析ツール](https://kinoukoudou-ptfpnkq3uqgaorabcyzgf2.streamlit.app/)
+        """)
+
          # **応用行動分析ツール**
     elif st.session_state.selected_method == "ABA（応用行動分析）":
         st.markdown("---")  # 区切り線
@@ -185,13 +192,8 @@ if st.session_state.selected_method:
         st.markdown("""
         [多変量回帰分析ツール](https://kaikiapp-tjtcczfvlg2pyhd9bjxwom.streamlit.app/)
         """)
-        # **統計学的分析方法ツール**
-    elif st.session_state.selected_method == "FBA/PBS（機能的行動評価/ポジティブ行動支援）":
-        st.markdown("---")  # 区切り線
-        st.subheader("📂 機能的行動評価分析ツール")
-        st.markdown("""
-        [機能的行動評価分析ツール](https://kinoukoudou-ptfpnkq3uqgaorabcyzgf2.streamlit.app/)
-        """)
+       
+        
 
         # **別のWebアプリへのリンク**
 st.markdown("---")  # 区切り線   
