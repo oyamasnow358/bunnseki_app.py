@@ -78,8 +78,7 @@ if st.session_state.selected_method:
         st.image("images/cbt_diagram.png", caption="認知行動療法", use_container_width=True)
 
 
-    else:
-        st.error(f"{st.session_state.selected_method} の説明ページが見つかりません")
+  
 
         # **別のWebアプリへのリンク**
 st.markdown("---")  # 区切り線   
