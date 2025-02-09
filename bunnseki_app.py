@@ -185,6 +185,13 @@ if st.session_state.selected_method:
         st.markdown("""
         [多変量回帰分析ツール](https://kaikiapp-tjtcczfvlg2pyhd9bjxwom.streamlit.app/)
         """)
+        # **統計学的分析方法ツール**
+    elif st.session_state.selected_method == "FBA/PBS（機能的行動評価/ポジティブ行動支援）":
+        st.markdown("---")  # 区切り線
+        st.subheader("📂 機能的行動評価分析ツール")
+        st.markdown("""
+        [機能的行動評価分析ツール](https://kinoukoudou-ptfpnkq3uqgaorabcyzgf2.streamlit.app/)
+        """)
 
         # **別のWebアプリへのリンク**
 st.markdown("---")  # 区切り線   
