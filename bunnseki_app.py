@@ -77,7 +77,99 @@ if st.session_state.selected_method:
     if st.session_state.selected_method == "CBT（認知行動療法）":
         st.image("images/cbt_diagram.png", caption="認知行動療法", use_container_width=True)
 
+     # **FBA/PBS（機能的行動評価/ポジティブ行動支援）の場合、Word・Excelダウンロードを追加**
+    elif st.session_state.selected_method == "FBA/PBS（機能的行動評価/ポジティブ行動支援）":
+        st.subheader("📂 参考データのダウンロード")
 
+        # Wordファイルのダウンロード
+        word_file_path = "data/機能的アセスメントについて.docx"
+        with open(word_file_path, "rb") as f:
+            st.download_button(
+                label="📄 ①機能的アセスメントについてをダウンロード",
+                data=f,
+                file_name="機能的アセスメントについて.docx",
+                mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            )
+        # Wordファイルのダウンロード
+        word_file_path = "data/ワークシート１　基礎情報.doc"
+        with open(word_file_path, "rb") as f:
+            st.download_button(
+                label="📄 ②ワークシート１　基礎情報をダウンロード",
+                data=f,
+                file_name="ワークシート１　基礎情報.docx",
+                mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            )
+        # Excelファイルのダウンロード
+        excel_file_path = "data/ワークシート２　MAS機能分析.xls"
+        with open(excel_file_path, "rb") as f:
+            st.download_button(
+                label="📊 ③ワークシート２　MAS機能分析.xlsをダウンロード",
+                data=f,
+                file_name="ワークシート２　MAS機能分析.xlsx",
+                mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            )
+        # Wordファイルのダウンロード
+        word_file_path = "data/ワークシート３　行動問題の特徴.doc"
+        with open(word_file_path, "rb") as f:
+            st.download_button(
+                label="📄 ④ワークシート３　行動問題の特徴をダウンロード",
+                data=f,
+                file_name="ワークシート３　行動問題の特徴.docx",
+                mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            ) 
+        # Wordファイルのダウンロード
+        word_file_path = "data/ワークシート４　ライフスタイルの特徴.doc"
+        with open(word_file_path, "rb") as f:
+            st.download_button(
+                label="📄 ⑤ワークシート４　ライフスタイルの特徴をダウンロード",
+                data=f,
+                file_name="ワークシート４　ライフスタイルの特徴.docx",
+                mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            )
+        # Wordファイルのダウンロード
+        word_file_path = "data/ワークシート５　行動の記録スキャッターブロット.doc"
+        with open(word_file_path, "rb") as f:
+            st.download_button(
+                label="📄 ⑥ワークシート５　行動の記録スキャッターブロットをダウンロード",
+                data=f,
+                file_name="ワークシート５　行動の記録スキャッターブロット.docx",
+                mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            )
+        # Wordファイルのダウンロード
+        word_file_path = "data/ワークシート６　１日の記録.doc"
+        with open(word_file_path, "rb") as f:
+            st.download_button(
+                label="📄 ⑦ワークシート６　１日の記録をダウンロード",
+                data=f,
+                file_name="ワークシート６　１日の記録.docx",
+                mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            )
+        # Wordファイルのダウンロード
+        word_file_path = "data/ワークシート７　頭の中のアセスメント.doc"
+        with open(word_file_path, "rb") as f:
+            st.download_button(
+                label="📄 ⑧ワークシート７　頭の中のアセスメント.docをダウンロード",
+                data=f,
+                file_name="ワークシート７　頭の中のアセスメント.doc.docx",
+                mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            )
+        # Wordファイルのダウンロード
+        word_file_path = "data/ワークシート８　ＡＢＣ分析.doc"
+        with open(word_file_path, "rb") as f:
+            st.download_button(
+                label="📄 ⑨ワークシート８　ＡＢＣ分析をダウンロード",
+                data=f,
+                file_name="ワークシート８　ＡＢＣ分析.docx",
+                mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            )
+
+        # **出典情報を追加**
+        st.markdown("---")  # 区切り線
+        st.subheader("📖 出典情報")
+        st.markdown("""
+        - **参考文献:** Durand, V. M. (1990). Severe behavior problems: A functional communication training approach. Guilford Press..
+        - **Webサイト:** [機能的アセスメント](http://www.kei-ogasawara.com/support/assessment/)
+        """)
   
 
         # **別のWebアプリへのリンク**
