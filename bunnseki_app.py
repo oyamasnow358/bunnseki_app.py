@@ -71,7 +71,7 @@ if st.session_state.selected_method:
         
 # 認知行動療法（CBT）の場合は画像を表示
     if st.session_state.selected_method == "CBT（認知行動療法）":
-            st.image("images/cbt_diagram.png", caption="認知行動療法", use_column_width=True)
+            st.image("images/cbt_diagram.png", caption="認知行動療法",  use_container_width=True)
 
     else:
         st.error(f"{st.session_state.selected_method} の説明ページが見つかりません")
