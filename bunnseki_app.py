@@ -183,7 +183,7 @@ if st.session_state.selected_method:
         st.markdown("---")  # 区切り線
         st.subheader("📂 重回帰分析ツール")
         st.markdown("""
-        [重回帰分析ツール](https://kaikiapp-tjtcczfvlg2pyhd9bjxwom.streamlit.app/)
+        [多変量回帰分析ツール](https://kaikiapp-tjtcczfvlg2pyhd9bjxwom.streamlit.app/)
         """)
 
         # **別のWebアプリへのリンク**
