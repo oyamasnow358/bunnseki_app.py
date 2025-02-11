@@ -192,6 +192,13 @@ if st.session_state.selected_method:
         st.markdown("""
         [多変量回帰分析ツール](https://kaikiapp-tjtcczfvlg2pyhd9bjxwom.streamlit.app/)
         """)
+        # **統計学的分析方法ツール**
+    elif st.session_state.selected_method == "統計学的分析方法":
+        st.markdown("---")  # 区切り線
+        st.subheader("📂 ロジスティック回帰分析ツール")
+        st.markdown("""
+        [ロジスティック回帰分析ツール](https://rojisthik-buklkg5zeh6oj2gno746ix.streamlit.app/)
+        """)
        
         
 
@@ -204,3 +211,4 @@ st.markdown("---")  # 区切り線
 st.markdown("[多変量回帰分析](https://kaikiapp-tjtcczfvlg2pyhd9bjxwom.streamlit.app/)")
 st.markdown("[応用行動分析](https://abaapppy-k7um2qki5kggexf8qkfxjc.streamlit.app/)")
 st.markdown("[機能的行動評価分析](https://kinoukoudou-ptfpnkq3uqgaorabcyzgf2.streamlit.app/)")
+st.markdown("[ロジスティック回帰分析ツール](https://rojisthik-buklkg5zeh6oj2gno746ix.streamlit.app/)")
