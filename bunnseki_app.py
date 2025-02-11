@@ -192,8 +192,6 @@ if st.session_state.selected_method:
         st.markdown("""
         [多変量回帰分析ツール](https://kaikiapp-tjtcczfvlg2pyhd9bjxwom.streamlit.app/)
         """)
-        # **統計学的分析方法ツール**
-        st.session_state.selected_method == "統計学的分析方法":
         st.markdown("---")  # 区切り線
         st.subheader("📂 ロジスティック回帰分析ツール")
         st.markdown("""
