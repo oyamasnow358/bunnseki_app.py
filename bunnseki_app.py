@@ -80,6 +80,7 @@ if st.session_state.selected_method:
 
      # **FBA/PBS（機能的行動評価/ポジティブ行動支援）の場合、Word・Excelダウンロードを追加**
     elif st.session_state.selected_method == "FBA/PBS（機能的行動評価/ポジティブ行動支援）":
+        st.markdown("---")  # 区切り線
         st.subheader("📂 参考データのダウンロード")
 
         # Wordファイルのダウンロード
@@ -165,7 +166,6 @@ if st.session_state.selected_method:
             )
 
         # **出典情報を追加**
-        st.markdown("---")  # 区切り線
         st.subheader("📖 出典情報")
         st.markdown("""
         - **参考文献:** Durand, V. M. (1990). Severe behavior problems: A functional communication training approach. Guilford Press..
@@ -202,6 +202,11 @@ if st.session_state.selected_method:
         st.markdown("""
         [ロジスティック回帰分析ツール](https://rojisthik-buklkg5zeh6oj2gno746ix.streamlit.app/)
         """)
+        st.markdown("---")  # 区切り線
+        st.subheader("📂 ノンパラメトリック統計分析ツール")
+        st.markdown("""
+        [ノンパラメトリック統計分析ツール](https://nonparametoric-nkk2awu6yv9xutzrjmrsxv.streamlit.app/)
+        """)
        
         
 
@@ -217,3 +222,4 @@ st.markdown("[多変量回帰分析](https://kaikiapp-tjtcczfvlg2pyhd9bjxwom.str
 st.markdown("[応用行動分析](https://abaapppy-k7um2qki5kggexf8qkfxjc.streamlit.app/)")
 st.markdown("[機能的行動評価分析](https://kinoukoudou-ptfpnkq3uqgaorabcyzgf2.streamlit.app/)")
 st.markdown("[ロジスティック回帰分析ツール](https://rojisthik-buklkg5zeh6oj2gno746ix.streamlit.app/)")
+st.markdown("[ノンパラメトリック統計分析ツール](https://nonparametoric-nkk2awu6yv9xutzrjmrsxv.streamlit.app/)")
