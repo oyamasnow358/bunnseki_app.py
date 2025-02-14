@@ -1,7 +1,7 @@
-FBA（機能的行動評価, Functional Behavior Assessment） / PBS（ポジティブ行動支援, Positive Behavior Support）
+FBA（機能的アセスメント, Functional Behavior Assessment） / PBS（ポジティブ行動支援, Positive Behavior Support）
 1. FBA/PBSとは？
 
-FBA（機能的行動評価）は、「なぜその行動をするのか？」を詳しく調べる方法です。たとえば、ある子が授業中に大声を出してしまう場合、次のように考えます。
+FBA（機能的アセスメント）は、「なぜその行動をするのか？」を詳しく調べる方法です。たとえば、ある子が授業中に大声を出してしまう場合、次のように考えます。
 
 ① 行動の前後を観察する（ABC分析）
 
