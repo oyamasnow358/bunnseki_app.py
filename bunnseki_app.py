@@ -187,6 +187,7 @@ if st.session_state.selected_method:
         """)
          # **統計学的分析方法ツール**
     elif st.session_state.selected_method == "統計学的分析方法":
+        st.write("""※以下の分析ツールを気軽に試してみて下さい。初心者でも簡単に使えるようにはしましたが、説明が難しい箇所はあると思います。フォームで意見を入力して頂くか、直接小山にお声かけ下さい。""")
         st.markdown("---")  # 区切り線
         st.subheader("📂 統計学 分析ツール一覧")
         st.markdown("""
@@ -207,6 +208,7 @@ if st.session_state.selected_method:
         
 
         # **別のWebアプリへのリンク**
+
 st.markdown("---")  # 区切り線   
 st.markdown("🌎関連Webアプリに移動する")
 st.markdown("[自立活動指導支援内容](https://aspecialeducationapp-6iuvpdfjbflp4wyvykmzey.streamlit.app/)")
@@ -222,4 +224,6 @@ st.markdown("[多変量回帰分析](https://kaikiapp-tjtcczfvlg2pyhd9bjxwom.str
 st.markdown("[t検定](https://tkentei-flhmnqnq6dti6oyy9xnktr.streamlit.app/)")
 st.markdown("[ロジスティック回帰分析ツール](https://rojisthik-buklkg5zeh6oj2gno746ix.streamlit.app/)")
 st.markdown("[ノンパラメトリック統計分析ツール](https://nonparametoric-nkk2awu6yv9xutzrjmrsxv.streamlit.app/)")
+st.markdown("---")  # 区切り線
+st.write("""※それぞれのアプリに記載してある内容や分析ツールのデータや図、表など外部に出す物（研究など）に使用する場合は小山までご相談ください。無断での転記・利用を禁じます。""")
   
