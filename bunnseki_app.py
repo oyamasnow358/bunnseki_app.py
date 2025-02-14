@@ -6,7 +6,7 @@ st.title("特別支援教育サポートアプリ")
 # 療法・分析法の一覧
 methods = {
     "ABA（応用行動分析）": "pages/aba.md",
-    "FBA/PBS（機能的行動評価/ポジティブ行動支援）": "pages/fba_pbs.md",
+    "FBA/PBS（機能的アセスメント/ポジティブ行動支援）": "pages/fba_pbs.md",
     "CBT（認知行動療法）": "pages/cbt.md",
     "ソーシャルスキルトレーニング": "pages/sst.md",
     "感覚統合療法": "pages/sensory_integration.md",
@@ -42,7 +42,7 @@ student_conditions = {
     "感情のコントロールが苦手": ["CBT（認知行動療法）", "SEL（社会情動的学習）", "マインドフルネス"],
     "対人関係が苦手": ["ソーシャルスキルトレーニング", "TEACCH"],
     "学習の集中が続かない": ["ABA（応用行動分析）", "感覚統合療法", "セルフモニタリング"],
-    "行動の問題がある": ["FBA/PBS（機能的行動評価/ポジティブ行動支援）", "ABA（応用行動分析）"],
+    "行動の問題がある": ["FBA/PBS（機能的アセスメント/ポジティブ行動支援）", "ABA（応用行動分析）"],
 }
 
 # 実態を選択
@@ -79,7 +79,7 @@ if st.session_state.selected_method:
         st.image("images/cbt_diagram.png", caption="認知行動療法", use_container_width=True)
 
      # **FBA/PBS（機能的行動評価/ポジティブ行動支援）の場合、Word・Excelダウンロードを追加**
-    elif st.session_state.selected_method == "FBA/PBS（機能的行動評価/ポジティブ行動支援）":
+    elif st.session_state.selected_method == "FBA/PBS（機能的アセスメント/ポジティブ行動支援）":
         st.markdown("---")  # 区切り線
         st.subheader("📂 参考データのダウンロード")
 
@@ -173,7 +173,7 @@ if st.session_state.selected_method:
         """)
 
         st.markdown("---")  # 区切り線
-        st.subheader("📂 機能的行動評価分析ツール")
+        st.subheader("📂 機能的アセスメント分析ツール")
         st.markdown("""
         [機能的行動評価分析ツール](https://kinoukoudou-ptfpnkq3uqgaorabcyzgf2.streamlit.app/)
         """)
@@ -218,7 +218,7 @@ st.markdown("[発達段階能力チャート作成](https://specialexcel2apppy-b
 st.markdown("---")  # 区切り線  
 st.markdown("📁教育・心理分析ツール") 
 st.markdown("[応用行動分析](https://abaapppy-k7um2qki5kggexf8qkfxjc.streamlit.app/)")
-st.markdown("[機能的行動評価分析](https://kinoukoudou-ptfpnkq3uqgaorabcyzgf2.streamlit.app/)") 
+st.markdown("[機能的アセスメント分析](https://kinoukoudou-ptfpnkq3uqgaorabcyzgf2.streamlit.app/)") 
 st.markdown("---")  # 区切り線
 st.markdown("📁統計学分析ツール") 
 st.markdown("[相関分析ツール](https://soukan-jlhkdhkradbnxssy29aqte.streamlit.app/)")
