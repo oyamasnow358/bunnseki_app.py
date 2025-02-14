@@ -188,7 +188,7 @@ if st.session_state.selected_method:
          # **統計学的分析方法ツール**
     elif st.session_state.selected_method == "統計学的分析方法":
         st.markdown("---")  # 区切り線
-        st.subheader("📂 統計学敵分析ツール一覧")
+        st.subheader("📂 統計学 分析ツール一覧")
         st.markdown("""
         [相関分析ツール](https://soukan-jlhkdhkradbnxssy29aqte.streamlit.app/)
         """)
