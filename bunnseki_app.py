@@ -11,6 +11,7 @@ methods = {
     "ソーシャルスキルトレーニング": "pages/sst.md",
     "感覚統合療法": "pages/sensory_integration.md",
     "PECS（絵カード交換式コミュニケーション）": "pages/pecs.md",
+    "動作法": "pages/pecs.md",
     "TEACCH": "pages/teacch.md",
     "SEL（社会情動的学習）": "pages/sel.md",
     "マインドフルネス": "pages/mindfulness.md",
@@ -43,6 +44,7 @@ student_conditions = {
     "対人関係が苦手": ["ソーシャルスキルトレーニング", "TEACCH"],
     "学習の集中が続かない": ["ABA（応用行動分析）", "感覚統合療法", "セルフモニタリング"],
     "行動の問題がある": ["FBA/PBS（機能的アセスメント/ポジティブ行動支援）", "ABA（応用行動分析）"],
+    "身体に課題がある": ["動作法"],
 }
 
 # 実態を選択
