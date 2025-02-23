@@ -83,7 +83,7 @@ if st.session_state.selected_method:
     elif st.session_state.selected_method == "PECS（絵カード交換式コミュニケーション）":
           st.image("images/pecs.png", caption="PECS（絵カード交換式コミュニケーション）", width=350)
 
-    elif st.session_state.selected_method == "動作法「生徒１」":
+    elif st.session_state.selected_method == "動作法":
           st.image("images/生徒1.png", caption="「生徒１」", width=350)
          
           st.image("images/生徒2.png", caption="「生徒２」", width=350)
