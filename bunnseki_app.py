@@ -79,7 +79,7 @@ if st.session_state.selected_method:
         st.image("images/cbt_diagram.png", caption="認知行動療法", use_container_width=True)
 
     elif st.session_state.selected_method == "PECS（絵カード交換式コミュニケーション）":
-          st.image("images/pecs.png", caption="PECS（絵カード交換式コミュニケーション）",  width=350)
+          st.image("images/pecs.png", caption="PECS（絵カード交換式コミュニケーション）", width=350)
 
      # **FBA/PBS（機能的行動評価/ポジティブ行動支援）の場合、Word・Excelダウンロードを追加**
     elif st.session_state.selected_method == "FBA/PBS（機能的アセスメント/ポジティブ行動支援）":
