@@ -1,4 +1,11 @@
 import streamlit as st
+from PIL import Image
+
+# 画像を読み込む（PIL を使用）
+image1 = Image.open("images/生徒1.png")
+image2 = Image.open("images/生徒2.png.png")
+image3 = Image.open("images/生徒3.png.png")
+image4 = Image.open("images/生徒4.png.png")
 
 # タイトル
 st.title("特別支援教育サポートアプリ")
@@ -84,13 +91,19 @@ if st.session_state.selected_method:
           st.image("images/pecs.png", caption="PECS（絵カード交換式コミュニケーション）", width=350)
 
     elif st.session_state.selected_method == "動作法":
-          st.image("images/生徒1.png", caption="「生徒１」", width=350)
-         
-          st.image("images/生徒2.png", caption="「生徒２」", width=350)
-         
-          st.image("images/生徒3.png", caption="「生徒３」", width=350)
-         
-          st.image("images/生徒4.png", caption="「生徒４」", width=350)
+          # 📌 画像1と画像2を横並び
+     col1, col2 = st.columns(2)
+     with col1:
+       st.image(image1, caption="画像1", width=350)
+     with col2:
+       st.image(image2, caption="画像2", width=350)
+
+          # 📌 画像3と画像4を横並び（下段）
+     col3, col4 = st.columns(2)
+     with col3:
+        st.image(image3, caption="画像3", use_column_width=True)
+     with col4:
+        st.image(image4, caption="画像4", use_column_width=True)
           
 
      # **FBA/PBS（機能的行動評価/ポジティブ行動支援）の場合、Word・Excelダウンロードを追加**
