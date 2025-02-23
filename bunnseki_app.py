@@ -104,6 +104,9 @@ if st.session_state.selected_method:
         st.image(image3, caption="生徒3", use_container_width=True)
      with col4:
         st.image(image4, caption="生徒4", use_container_width=True)
+    
+    elif st.session_state.selected_method == "マインドフルネス":
+          st.image("images/マインドフルネス1.png", caption="マインドフルネス", use_container_width=True)
           
 
      # **FBA/PBS（機能的行動評価/ポジティブ行動支援）の場合、Word・Excelダウンロードを追加**
