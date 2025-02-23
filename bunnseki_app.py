@@ -94,16 +94,16 @@ if st.session_state.selected_method:
           # 📌 画像1と画像2を横並び
      col1, col2 = st.columns(2)
      with col1:
-       st.image(image1, caption="画像1", use_container_width=True)
+       st.image(image1, caption="生徒1", use_container_width=True)
      with col2:
-       st.image(image2, caption="画像2", use_container_width=True)
+       st.image(image2, caption="生徒2", use_container_width=True)
 
           # 📌 画像3と画像4を横並び（下段）
      col3, col4 = st.columns(2)
      with col3:
-        st.image(image3, caption="画像3", use_container_width=True)
+        st.image(image3, caption="生徒3", use_container_width=True)
      with col4:
-        st.image(image4, caption="画像4", use_container_width=True)
+        st.image(image4, caption="生徒4", use_container_width=True)
           
 
      # **FBA/PBS（機能的行動評価/ポジティブ行動支援）の場合、Word・Excelダウンロードを追加**
