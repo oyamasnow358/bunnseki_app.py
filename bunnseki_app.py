@@ -3,9 +3,9 @@ from PIL import Image
 
 # 画像を読み込む（PIL を使用）
 image1 = Image.open("images/生徒1.png")
-image2 = Image.open("images/生徒2.png.png")
-image3 = Image.open("images/生徒3.png.png")
-image4 = Image.open("images/生徒4.png.png")
+image2 = Image.open("images/生徒2.png")
+image3 = Image.open("images/生徒3.png")
+image4 = Image.open("images/生徒4.png")
 
 # タイトル
 st.title("特別支援教育サポートアプリ")
