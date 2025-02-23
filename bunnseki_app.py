@@ -83,6 +83,16 @@ if st.session_state.selected_method:
     elif st.session_state.selected_method == "PECS（絵カード交換式コミュニケーション）":
           st.image("images/pecs.png", caption="PECS（絵カード交換式コミュニケーション）", width=350)
 
+    elif st.session_state.selected_method == "動作法「生徒１」":
+          st.image("images/生徒1.png", caption="「生徒１」", width=350)
+         
+          st.image("images/生徒2.png", caption="「生徒２」", width=350)
+         
+          st.image("images/生徒3.png", caption="「生徒３」", width=350)
+         
+          st.image("images/生徒4.png", caption="「生徒４」", width=350)
+          
+
      # **FBA/PBS（機能的行動評価/ポジティブ行動支援）の場合、Word・Excelダウンロードを追加**
     elif st.session_state.selected_method == "FBA/PBS（機能的アセスメント/ポジティブ行動支援）":
         st.markdown("---")  # 区切り線
