@@ -11,7 +11,7 @@ methods = {
     "ソーシャルスキルトレーニング": "pages/sst.md",
     "感覚統合療法": "pages/sensory_integration.md",
     "PECS（絵カード交換式コミュニケーション）": "pages/pecs.md",
-    "動作法": "pages/pecs.md",
+    "動作法": "pages/dousahou.md",
     "TEACCH": "pages/teacch.md",
     "SEL（社会情動的学習）": "pages/sel.md",
     "マインドフルネス": "pages/mindfulness.md",
