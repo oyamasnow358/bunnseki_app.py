@@ -1,11 +1,20 @@
 import streamlit as st
 from PIL import Image
+import requests
+
+
+# 画像のURLを貼る（手動でコピーしたもの）
+# 画像のURLを手動で設定（Imgur にアップロードした画像のリンクを使う）
+img1 = "https://i.imgur.com/SwjfDft.png"  # 動作法１画像
+img2 = "https://i.imgur.com/LqbE9Nf.png"  # 動作法２画像
+img3 = "https://i.imgur.com/XLwjXFE.png"  # 動作法３の画像
+img4 = "https://i.imgur.com/2MfaBxc.png"  # 動作法４
 
 # 画像を読み込む（PIL を使用）
-image1 = Image.open("images/生徒1.png")
-image2 = Image.open("images/生徒2.png")
-image3 = Image.open("images/生徒3.png")
-image4 = Image.open("images/生徒4.png")
+#image1 = Image.open("images/生徒1.png")
+#image2 = Image.open("images/生徒2.png")
+#image3 = Image.open("images/生徒3.png")
+#image4 = Image.open("images/生徒4.png")
 
 # タイトル
 st.title("特別支援教育サポートアプリ")
@@ -94,16 +103,20 @@ if st.session_state.selected_method:
           # 📌 画像1と画像2を横並び
      col1, col2 = st.columns(2)
      with col1:
-       st.image(image1, caption="生徒1", use_container_width=True)
+       #st.image(image1, caption="生徒1", use_container_width=True)
+       st.image(img1, caption="生徒1", use_container_width=True)
      with col2:
-       st.image(image2, caption="生徒2", use_container_width=True)
+       #st.image(image2, caption="生徒2", use_container_width=True)
+       st.image(img2, caption="生徒2", use_container_width=True)
 
           # 📌 画像3と画像4を横並び（下段）
      col3, col4 = st.columns(2)
      with col3:
-        st.image(image3, caption="生徒3", use_container_width=True)
+        #st.image(image3, caption="生徒3", use_container_width=True)
+        st.image(img3, caption="生徒3", use_container_width=True)
      with col4:
-        st.image(image4, caption="生徒4", use_container_width=True)
+        #st.image(image4, caption="生徒4", use_container_width=True)
+        st.image(img4, caption="生徒4", use_container_width=True)
     
     elif st.session_state.selected_method == "マインドフルネス":
           st.image("images/マインドフルネス1.png", caption="マインドフルネス", use_container_width=True)
