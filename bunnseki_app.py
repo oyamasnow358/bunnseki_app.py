@@ -9,6 +9,9 @@ img1 = "https://i.imgur.com/SwjfDft.png"  # 動作法１画像
 img2 = "https://i.imgur.com/LqbE9Nf.png"  # 動作法２画像
 img3 = "https://i.imgur.com/XLwjXFE.png"  # 動作法３の画像
 img4 = "https://i.imgur.com/2MfaBxc.png"  # 動作法４
+img5 = "https://i.imgur.com/zheqhdv.png"  #
+img6 = "https://i.imgur.com/Hw4PIKo.jpeg"#
+img7 = "https://i.imgur.com/vnMHFNE.png"#
 
 # 画像を読み込む（PIL を使用）
 #image1 = Image.open("images/生徒1.png")
@@ -94,10 +97,11 @@ if st.session_state.selected_method:
 
     # **CBT（認知行動療法）なら画像を表示**
     if st.session_state.selected_method == "CBT（認知行動療法）":
-        st.image("images/cbt_diagram.png", caption="認知行動療法", use_container_width=True)
+        #st.image("images/cbt_diagram.png", caption="認知行動療法", use_container_width=True)
+        st.image(img7, caption="認知行動療法", use_container_width=True) 
 
     elif st.session_state.selected_method == "PECS（絵カード交換式コミュニケーション）":
-          st.image("images/pecs.png", caption="PECS（絵カード交換式コミュニケーション）", width=350)
+          st.image(img5, caption="PECS（絵カード交換式コミュニケーション）", use_container_width=True) 
 
     elif st.session_state.selected_method == "動作法":
           # 📌 画像1と画像2を横並び
@@ -119,7 +123,8 @@ if st.session_state.selected_method:
         st.image(img4, caption="生徒4", use_container_width=True)
     
     elif st.session_state.selected_method == "マインドフルネス":
-          st.image("images/マインドフルネス1.png", caption="マインドフルネス", use_container_width=True)
+          #st.image("images/マインドフルネス1.png", caption="マインドフルネス", use_container_width=True)
+          st.image(img6, caption="マインドフルネス", use_container_width=True)
           
 
      # **FBA/PBS（機能的行動評価/ポジティブ行動支援）の場合、Word・Excelダウンロードを追加**
