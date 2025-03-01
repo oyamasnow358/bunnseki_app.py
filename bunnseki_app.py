@@ -101,7 +101,7 @@ if st.session_state.selected_method:
         st.image(img7, caption="認知行動療法", use_container_width=True) 
 
     elif st.session_state.selected_method == "PECS（絵カード交換式コミュニケーション）":
-          st.image(img5, caption="PECS（絵カード交換式コミュニケーション）", use_container_width=True) 
+          st.image(img6, caption="PECS（絵カード交換式コミュニケーション）", use_container_width=True) 
 
     elif st.session_state.selected_method == "動作法":
           # 📌 画像1と画像2を横並び
@@ -124,7 +124,7 @@ if st.session_state.selected_method:
     
     elif st.session_state.selected_method == "マインドフルネス":
           #st.image("images/マインドフルネス1.png", caption="マインドフルネス", use_container_width=True)
-          st.image(img6, caption="マインドフルネス", use_container_width=True)
+          st.image(img5, caption="マインドフルネス", use_container_width=True)
           
 
      # **FBA/PBS（機能的行動評価/ポジティブ行動支援）の場合、Word・Excelダウンロードを追加**
